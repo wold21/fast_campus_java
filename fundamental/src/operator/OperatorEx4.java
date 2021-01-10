@@ -5,15 +5,15 @@ public class OperatorEx4 {
 	public static void main(String[] args) {
 		int num1 = 0B00001010; // 10
 		int num2 = 0B00000101; // 5
-		
-		// And µÑ´Ù ÂüÀÌ¸é 1À» ¹ÝÈ¯
-		System.out.println(num1 & num2); // °ö
-		System.out.println(num1 | num2); // ÇÕ
+
+		// And ï¿½Ñ´ï¿½ ï¿½ï¿½ï¿½Ì¸ï¿½ 1ï¿½ï¿½ ï¿½ï¿½È¯
+		System.out.println(num1 & num2); // ï¿½ï¿½
+		System.out.println(num1 | num2); // ï¿½ï¿½
 		System.out.println(num1 ^ num2); // XOR
-		
+
 		System.out.println(num2 << 3);
-		System.out.println(num2 >> 2); 
-		
+		System.out.println(num2 >> 2);
+
 	}
 
 }
