@@ -12,6 +12,7 @@ public class Chapter04Quiz02 {
         int lineCount = sc.nextInt();
         int spaceCount = lineCount / 2 + 1;
         int starCount = 1;
+        sc.close();
 
         for (int i = 0; i < lineCount; i++) {
             for (int j = 0; j < spaceCount; j++) {
