@@ -5,6 +5,8 @@ public class CalcTest {
         // 당연히 Calc인터페이스, ComplateCalc 추상 클래스를 타입으로 사용가능.
         // 인터페이스는 구현코드가 없기 때문에 잘 생각해서 타입지정해야함.
         // 그래서 인터페이스를 타입 상속이라고도함.
+        // 덧붙여서 인터페이스 클래스는 여러개의 상위 클래스를 '상속'받을 수 있다.
+        // 구현메서드가 없기 때문에.
         ComplateCalc calc = new ComplateCalc();
 
         int n1 = 10;

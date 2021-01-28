@@ -1,9 +1,13 @@
 package interfaceex;
 
 public interface Calc {
+
+    // 상수
     double PI = 3.14;
     int Error = -999999999;
 
+    // 추상 메소드
+    // 구현 클래스에서 구현해야함.
     int add(int num1, int num2);
 
     int subtract(int num1, int num2);
