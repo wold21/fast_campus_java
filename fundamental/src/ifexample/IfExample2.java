@@ -5,34 +5,34 @@ import java.util.Scanner;
 public class IfExample2 {
 
 	public static void main(String[] args) {
-		
+
 		Scanner sc = new Scanner(System.in);
-		
-		System.out.println("³ªÀÌ¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä");
-		
+
+		System.out.println("ï¿½ï¿½ï¿½Ì¸ï¿½ ï¿½Ô·ï¿½ï¿½ï¿½ï¿½Ö¼ï¿½ï¿½ï¿½");
+
 		int age = sc.nextInt();
 		sc.close();
-		
+
 		int charge = 0;
-		
-		// if¿Í if´Â µû·Î Á¶°ÇÀ» µûÁø´Ù.
-		// if¿Í else if, else´Â ÇÏ³ª¶óµµ Á¶°Ç¿¡ °É¸®¸é
-		// ³ª¸ÓÁö Á¶°ÇÀ» ¾È°Ç´Ù. 
+
+		// ifï¿½ï¿½ ifï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½.
+		// ifï¿½ï¿½ else if, elseï¿½ï¿½ ï¿½Ï³ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ç¿ï¿½ ï¿½É¸ï¿½ï¿½ï¿½
+		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½È°Ç´ï¿½.
 		if (age < 8) {
 			charge = 1000;
-			System.out.println("¹ÌÃëÇÐ");
-		}else if (age < 14) {
+			System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
+		} else if (age < 14) {
 			charge = 1500;
-			System.out.println("ÃÊµî»ý");
-		}else if (age < 20) {
+			System.out.println("ï¿½Êµï¿½ï¿½");
+		} else if (age < 20) {
 			charge = 2000;
-			System.out.println("Áß°íµî»ý");
-		}else {
+			System.out.println("ï¿½ß°ï¿½ï¿½ï¿½ï¿½");
+		} else {
 			charge = 3000;
-			System.out.println("³ª¸ÓÁö");
+			System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
 		}
-		
-		System.out.println("³ªÀÌ : " + age);
-		System.out.println("¿ä±Ý : " + charge);
+
+		System.out.println("ï¿½ï¿½ï¿½ï¿½ : " + age);
+		System.out.println("ï¿½ï¿½ï¿½ : " + charge);
 	}
 }
