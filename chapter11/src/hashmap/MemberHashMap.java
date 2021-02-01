@@ -1,4 +1,4 @@
-package treemap;
+package hashmap;
 
 import java.util.HashMap;
 import java.util.Iterator;
@@ -33,9 +33,5 @@ public class MemberHashMap {
             System.out.println(member);
         }
         System.out.println();
-
-        // // value로 순회하는 법
-        // // 콜렉션으로 반환이 됨.
-        // hashMap.values().iterator();
     }
 }

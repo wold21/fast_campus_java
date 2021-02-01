@@ -1,4 +1,4 @@
-package hashmap;
+package treemap;
 
 public class MemberTreeMapTest {
     public static void main(String[] args) {
