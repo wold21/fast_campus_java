@@ -20,7 +20,7 @@ public class GetController {
 
     // @GetMapping은 @RequestMapping이랑은 다르게
     // 메소드를 지정하지 않아도 된다. Get을 하기 위한 어노테이션이기 때문에.
-    @GetMapping("/getParameter") // localhost:8080/api/getParameter?id=1234&passwoed=abcd
+    @GetMapping("/getParameter") // localhost:8080/api/getParameter?id=1234&password=abcd
     public String getParameter(@RequestParam String id, @RequestParam(name = "password") String pwd) {
         String password = "bbbb";
         System.out.println("id : " + id);
