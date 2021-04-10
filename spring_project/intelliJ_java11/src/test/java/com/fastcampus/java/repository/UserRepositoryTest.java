@@ -1,6 +1,8 @@
 package com.fastcampus.java.repository;
 
 import com.fastcampus.java.JavaApplicationTests;
+import com.fastcampus.java.component.LoginUserAuditorAware;
+import com.fastcampus.java.config.JpaConfig;
 import com.fastcampus.java.model.entity.User;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
@@ -8,6 +10,7 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.jdbc.AutoConfigureTestDatabase;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
+import org.springframework.context.annotation.Import;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.time.LocalDateTime;
@@ -17,6 +20,8 @@ import java.util.Optional;
 @DataJpaTest                                                                    // JPA 테스트 관련 컴포넌트만 Import
 @AutoConfigureTestDatabase(replace = AutoConfigureTestDatabase.Replace.NONE)    // 실제 db 사용
 @DisplayName("UserRepositoryTest 테스트")
+@Import({JpaConfig.class, LoginUserAuditorAware.class}) // @SpringBootTest의 통합 전체 Load방식에서 @DataJpaTest로 변경됨에 따라 필요한 요소를 직접 import
+// @EnableJpaAuditing , AuditorAware 를 상속 받은 class import
 public class UserRepositoryTest extends JavaApplicationTests {
 
     @Autowired
