@@ -4,6 +4,7 @@ public class EmployeeTest {
     public static void main(String[] args) {
         Employee employee_kim = new Employee();
         employee_kim.setEmployeeName("kim");
+        System.out.println(employee_kim.getSerialNum());
 
         Employee employee_lee = new Employee();
         employee_lee.setEmployeeName("lee");
