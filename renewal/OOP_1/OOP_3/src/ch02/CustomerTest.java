@@ -12,5 +12,9 @@ public class CustomerTest {
         kim.setAgentID("3030");
         kim.bonusPoint = 10000;
         System.out.println(kim.showCostomerInfo());
+
+        Customer vc = new VipCustomer(11002, "testName");
+        // 변수는 자기 타입것만 쓸 수 있다.
+        // VIP 변수는 사용 x
     }
 }

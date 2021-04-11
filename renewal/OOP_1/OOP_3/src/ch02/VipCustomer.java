@@ -30,5 +30,4 @@ public class VipCustomer extends Customer {
     public void setAgentID(String agentID) {
         this.agentID = agentID;
     }
-
 }
