@@ -1,3 +1,5 @@
+package quiz02;
+
 public class CarTest {
     public static void main(String[] args) {
         CarFactory factory = CarFactory.getInstance();

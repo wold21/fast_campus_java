@@ -1,3 +1,5 @@
+package quiz02;
+
 public class CarFactory {
     private static CarFactory instance = new CarFactory();
 
